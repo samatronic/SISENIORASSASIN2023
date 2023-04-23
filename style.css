@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*{
+ font-family: 'Helvetica Neue' , sans-serif;
+}
+.map{
+  width: 700px;
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul {
+  list-style-type: none;
+
+}
+body{
+    width: 100%;
+    background: #fffcdd;
+    position: relative;
+    display: flex;
+  }
+  #menu{
+    background: #4d0013;
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #menu .logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 30px 0 0 30px;
+  }
+  #menu .logo img{
+    width: 150px;
+    height: 100px;
+    margin-right: 15px;
+  }
+  #menu .items{
+    margin-top: 30px;
+    font-size: 35px;
+  }
+  #menu .items li:hover{
+    background: #29010b;
+  }
+  /* #menu .items li:nth-child(1){
+    border-left: 4px solid white;
+  } */
+  #menu .items li{
+    list-style: none;
+    padding: 15px 0;
+    transition: 0.3s ease;
+  }
+  #menu .items a{
+    text-decoration: none;
+    color: white;
+    font-weight: 00px;
+  }
+  #menu .items li a {
+    text-align: none;
+    color: white ;
+    font-weight: 00px;
+    transition: 0.3s ease;
+  }
+#dashboard{
+  width: calc(100% - 300px);
+  margin-left: 300px;
+  position: relative;
+}
+#dashboard .nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  border-bottom: 3px solid #586A6A;
+}
+.search{
+  display: flex;
+  color: #fff;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 4px;
+  background-color: #4d0013;
+  overflow: hidden;
+  text-decoration: none;
+}
+/* #dashboard .nav .search i{
+  margin-right: 12px;
+}
+#dashboard .nav .search input{
+  border: none;
+  outline: none;
+  font-size: 12px;
+} */
+#dashboard .nav .insta{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#dashboard .nav .insta i{
+  margin-right: 20px;
+  font-size: 19px;
+  font-weight: 400;
+}
+#dashboard .nav .contact{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  text-size-adjust: auto;
+}
+.n1{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#menu-btn{
+  display: none;
+  margin-right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.dashtitle{
+  color: black;
+  font-weight: 700;
+  font-size: 60px;
+  padding: 15px 15px 0px 15px;
+  margin: 20px;
+}
+.values{
+  padding: 5px 5px 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: flex;
+}
+.values .valbox{
+  background-color: #292929;
+  color: white;
+  width: 255px;
+  padding: 15px 20px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.values .valbox i {
+  font-size: 25px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  background-color: black;
+  margin-right: 16px;
+}
+.values .valbox:nth-child(1) i{
+background-color: blue;
+}
+.values .valbox:nth-child(2) i{
+  background-color: black;
+}
+.values .valbox:nth-child(3) i{
+  background-color: green;
+}
+.values .valbox:nth-child(4) i{
+  background-color: red;
+  
+}
+.values .valbox h1{
+  font-size: 20px;
+  font-weight: 600;
+}
+.values .valbox span{
+  font-size: 12px;
+  color: white;
+}
+.sheet{
+  width: 1600px;
+  height: 900px;
+ align-items: center;
+}
+.regnow{
+  font-size: 45px;
+  margin: 20px;
+}
+.hrules{
+  list-style: none;
+}
+@media (max-width: 896px) {
+  .map{
+    width: 400px;
+    height: 300px;
+  }
+  #menu{
+    width: 270px;
+    position: fixed;
+    left: -270px;
+    transition: 0.3s ease;
+  }
+  #menu.active{
+    left: 0px;
+  }
+  #menu-btn{
+    display: initial;
+  }
+  #dashboard{
+    width: 100%;
+    margin-left: 0px;
+    display: inline-block;
+    transition: 0.3s ease;
+  }
+  #menu.active~#dashboard{
+width: calc(100% - 270px);
+margin-left: 270px;
+transition: 0.3s ease;
+  }
+  #dashboard .nav{
+    width: 100%;
+  }
+  .values{
+    padding: 30px 30px 0px 30px;
+    justify-content: flex-start;
+    display: flex;
+    margin: 20px auto;
+  height:300px;
+  display:grid;
+  grid-template-columns: 200px 200px;
+  grid-row: auto auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  }
+  .values .valbox{
+    font-size: 10px;
+    width: 150px;
+    height: 100px;
+  flex-wrap: wrap;
+    padding: 15px 20px;
+    margin: 10px 20px 10px 10px;
+    display: flex;
+  }
+  .sheet{
+    width: 414px;
+    height: 600px;
+  }
+  .sheet iframe {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);}
+  .shoota{
+    width: fit-content;
+    height: fit-content;
+    margin-left: 270px;
+    padding: 30px 30px 30px 30px;
+  }
+.regnow{
+  font-size: 30px;
+}
+}
+@media (max-width:477px){
+  #dashboard .nav{
+    padding: 15px;
+  }
+.values{
+  padding: 15px 15px 0 15px;
+}
+.map{
+  width: 300px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+.shoota{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 15px 0 15px;
+}
+.time{
+  text-align: center;
+}
+.signup{
+height: 400px;
+width: 400px;
+}
+.regnow{
+  text-align: center;
+  padding: 0 14px 14px 14px;
+}
+.shine{
+color:white;
+padding: 15px 15px 0 15px;
+}
+.registration{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.shine a{
+    height: 50px;
+    /* width: 50px; */
+    border-radius: 5px;
+    background-color: #4d0013;
+    box-shadow: 2px 2px 0 #fff;
+    border: 1px solid #fff;
+    padding:30px 30px 30px 30px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+    outline: none;
+    transition: all .2s cubic-bezier(.21,-0.67,.76,1.63);
+}
+    .shine a:hover {
+      height: 80px;
+      font-size: 30px;
+      padding: 40px 40px 40px 40px;
+      box-shadow: 5px 5px 0 #fff;
+    } 
+      .shine a:after {
+      animation: shine 1s .2s ease-in-out forwards;
+      position: absolute;
+      top: -50%;
+      left: -60%;
+      right: auto;
+      width: 50%;
+      height: 200%;
+      background: linear-gradient(90deg, rgba(209,112,60,0),rgba(255,255,255,0.5) 50%,rgba(209,112,60,0));
+      transform: rotate(-30deg);
+    }
+  
+  @keyframes a{
+    100% {
+      transform: rotate(-30deg) translate(320%, 120%);
+    }
+  } 

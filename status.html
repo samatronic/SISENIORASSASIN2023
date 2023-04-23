@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='style.css'/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/59cf442a9c.js" crossorigin="anonymous"></script>
+    <title>Senior Assasin 2023</title>
+</head>
+<body>
+  <div id = "menu">
+    <div class = "logo">
+      <a href="index.html">
+        <img src = "download.png">
+       </a>
+    </div>
+     <nav class = "items">
+        <ul>
+          <li class="home"><a href="index.html">Home</a></li>
+          <li class="rules"><a href="rules.html">Rules</a></li>
+          <li class="game"><a href="game.html">Game Summary</a></li>
+          <!-- <li class="team"><a href="teams.html">Teams</a></li> -->
+          <li class="status"><a href="status.html">Status</a></li>
+          <li class="registration"><a href="registration.html">Registration</a></li>
+        </ul>
+      </nav>
+  </div>
+
+  <section id = "dashboard">
+    <div class = "nav">
+        <div class = "n1">
+          <div>
+            <i class="fa-solid fa-bars" id = "menu-btn"></i>
+          </div>
+          <div class = "search">
+            <a href="registration.html">Register now!</a>
+
+          </div>
+        </div>
+        <div class = "insta">
+            <a href = "https://www.instagram.com/siseniorassassin/">
+                <i class="fa-brands fa-instagram" ></i>
+              </a>
+          <a class = "contact" href = "contact.html">Contact</a>
+
+          </div>
+    </div>
+    <div class = "values">
+        <div class = "valbox">
+          <i class="fa-solid fa-user"></i>
+          <div>
+            <h3>269</h3>
+            <span>Total Players</span>
+          </div>
+        </div>
+        <div class = "valbox">
+          <i class="fa-solid fa-users"></i>
+          <div>
+            <h3>47</h3>
+            <span>Total Teams</span>
+          </div>
+        </div>
+        <div class = "valbox">
+          <i class="fa-solid fa-user-check"></i>
+          <div>
+            <h3>123</h3>
+            <span>Total Alive</span>
+          </div>
+        </div>
+        <div class = "valbox">
+          <i class="fa-solid fa-skull"></i>
+          <div>
+            <h3>146</h3>
+            <span>Total Eliminated</span>
+          </div>
+        </div>
+      </div>
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4rjSS2Zz2UBNlSh6gdqPkg8tEo8Z0M2mnvctnV_gHiHMj7PWGBu7sXogM5QkdqKE0zSh3lDBz6SoH/pubhtml?widget=true&amp;headers=false" class = "sheet"></iframe>
+
+      <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+  </section>
+
+  <script>
+    $('#menu-btn').click(function(){
+      $('#menu').toggleClass("active");
+    })
+  </script>
+</body>
+</html>

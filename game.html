@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='style.css'/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/59cf442a9c.js" crossorigin="anonymous"></script>
+    <title>Game Summary</title>
+</head>
+<body>
+  <div id = "menu">
+    <div class = "logo">
+      <a href="index.html">
+        <img src = "download.png">
+       </a>
+    </div>
+     <nav class = "items">
+        <ul>
+          <li class="home"><a href="index.html">Home</a></li>
+          <li class="rules"><a href="rules.html">Rules</a></li>
+          <li class="game"><a href="game.html">Game Summary</a></li>
+          <!-- <li class="team"><a href="teams.html">Teams</a></li> -->
+          <li class="status"><a href="status.html">Status</a></li>
+          <li class="registration"><a href="registration.html">Registration</a></li>
+        </ul>
+      </nav>
+  </div>
+
+  <section id = "dashboard">
+    <div class = "nav">
+        <div class = "n1">
+          <div>
+            <i class="fa-solid fa-bars" id = "menu-btn"></i>
+          </div>
+          <div class = "search">
+            <a href="registration.html">Register now!</a>
+
+          </div>
+        </div>
+        <div class = "insta">
+            <a href = "https://www.instagram.com/siseniorassassin/">
+                <i class="fa-brands fa-instagram" ></i>
+              </a>
+          <a class = "contact" href = "contact.html">Contact</a>
+
+          </div>
+    </div>
+    <h1 style = "text-align: center;">Game Summary!</h1>
+    <div>
+        <h2>Invincibility</h2>
+        <h3>You will be impervious to water attacks if you wear a(n) :</h3>
+        <ol style = " font-weight: bold;">
+            <li>Inflated Donut in Round 1</li>
+             <li> AND Swim Cap in Round 2</li>
+             <li>Wetsuit in Round 3</li>
+        </ol>
+        <h3>You can block water attacks with an umbrella all 3 rounds</h3>
+        <h3>Invincibility Items DO NOT WORK during Purge Hours. </h3>
+        <h3>Purge hours are every round from Thursday 12:00am till Sunday 11pm</h3>
+      
+    </div>
+    <div>
+      <h2>Athletics</h2>
+      <ul style = " font-weight: bold; font-weight: bold;">
+        <li> You may only "kill" your target once they have concluded their match/practice. However, before and after is permitted.</li>
+        <li>(Only applies to SI practices and games.)</li>
+      </ul>
+      <h2>Misc. Rules</h2>
+      <ul style = " font-weight: bold; font-weight: bold;">
+        <li> Any laws broken/unethical practices will be subject to the decision of the gamemaster(s)</li>
+        <li>You cannot ask your parents, legal guardians to bail you out. You can only ask your teammates. (Don't involve parents, it ruins the fun!)</li>
+      </ul>
+      <h2>Warning</h2>
+      <ul style = " font-weight: bold; font-weight: bold;">
+        <li>By registering for the game, you and the members of your team are hereby agreeing to follow the rules stated on this site.  Any infraction of these parameters/rules will lead to your team’s disqualification. </li>
+        <li>The gamemasters for this game are simple organizers and do not take any responsibility for actions performed by any of the participants.</li>
+        <li>The gamemaster shall have the final say on the rules and decisions of the game</li>
+      </ul>
+    </div>
+
+
+    <!-- <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a> -->
+  </section>
+  <script>
+    $('#menu-btn').click(function(){
+      $('#menu').toggleClass("active");
+    })
+  </script>
+</body>
+</html>
