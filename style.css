@@ -219,7 +219,7 @@ background-color: blue;
     transition: 0.3s ease;
   }
   #menu.active~#dashboard{
-width: calc(100% - 270px);
+width: calc(75% - 270px);
 margin-left: 270px;
 transition: 0.3s ease;
   }
