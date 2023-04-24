@@ -138,6 +138,9 @@ body{
   align-items: center;
   justify-content: flex;
 }
+.search a{
+  color: #fff;
+}
 .values .valbox{
   background-color: #292929;
   color: white;
