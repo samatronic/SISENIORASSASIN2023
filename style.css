@@ -196,7 +196,7 @@ background-color: blue;
   list-style: none;
 }
 @media (max-width: 896px) {
- .body{
+  body{
   width: 85%;
  }
   .map{
