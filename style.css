@@ -14,7 +14,7 @@ ul {
 
 }
 body{
-    width: 100%;
+    width: 85%;
     background: #fffcdd;
     position: relative;
     display: flex;
@@ -197,7 +197,7 @@ background-color: blue;
 }
 @media (max-width: 896px) {
  .body{
-  width: 75%;
+  width: 85%;
  }
   .map{
     width: 400px;
